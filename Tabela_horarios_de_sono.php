@@ -1,4 +1,4 @@
-<table border='1'>
+<table id='tabela_horarios_de_sono' border='1'>
 	<tr><th>Data</th><th>Acordei</th><th>Dormi</th><th>TSono</th></tr>
 	<?php
 	//Converte a hora no formato Hora:Minuto em string
@@ -7,8 +7,12 @@
 		$hora = $hora_total%24;
 		return $hora.":".$min;
 	}
-	// Puxa os dados do banco de dados e printa a tabela
-	$resp = mysqli_query($link,"SELECT * FROM acordado ORDER BY id DESC");  
+	$p = 11;
+	// Puxa os dados do banco de dados e printa a tabela com os ultimos 8 registros
+	$resp = mysqli_query($link,"SELECT * FROM acordado ORDER BY id   ");  
+	while($dado=$resp->fetch_array()){ $id=$dado['id']-7; } 
+	
+	$resp = mysqli_query($link,"SELECT * FROM acordado WHERE id>=$id ORDER BY id DESC  ");  
 	while($dado=$resp->fetch_array()){ echo "
 		<tr><td>".$dado['data']."</td><td>".converte_hora($dado['acordei'])."</td><td>".converte_hora($dado['dormi'])."</td><td>".converte_hora($dado['tempo_de_sono'])."</td></tr>
 	";} 

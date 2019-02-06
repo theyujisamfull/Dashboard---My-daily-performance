@@ -1,4 +1,4 @@
-<?php include("../../conexao.php"); ?>
+<?php include("../../../conexao.php"); ?>
 <?php date_default_timezone_set('America/Sao_Paulo');?>
  
 <html>
@@ -11,12 +11,13 @@
 	</head>
 	<body>
 		
-		<div class='container'>
+		<div class='container-fluid'>
 			<div class='row'>
-				<div class='col-md-9'> <?php include('tabela_horarios_de_sono.php');?>	</div>
-				<div class='col-md-3'>
-				
+				<div class='col-md-6'>				
+				<?php include('Tabela_datas_proximas.php');?>
 				</div>
+				<div class='col-md-6'> <?php include('tabela_horarios_de_sono.php');?>	</div>
+				
 			</div>
 		</div>
 		
