@@ -1,5 +1,5 @@
-<table id='tabela_horarios_de_sono' border='1'>
-	<tr><th>Prof</th><th>Timer</th><th>Evento</th><th>Data</th><th>Sem</th></tr>
+<table class='table table-striped table-hover'>
+	<thead><tr><th>Prof</th><th>Timer</th><th>Evento</th><th>Data</th><th>Sem</th></tr></thead>
 	<?php
 	// Puxa os dados do banco de dados e printa a tabela
 	$resp = mysqli_query($link,"SELECT * FROM datasproximas ORDER BY timer DESC"); 

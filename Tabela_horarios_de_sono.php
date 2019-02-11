@@ -1,5 +1,5 @@
-<table id='tabela_horarios_de_sono' border='1'>
-	<tr><th>Data</th><th>Acordei</th><th>Dormi</th><th>TSono</th></tr>
+<table class='table table-bordered table-striped table-sm table-hover '>
+	<thead><tr><th>Data</th><th>Acordei</th><th>Dormi</th><th>TSono</th></tr></thead>
 	<?php
 	//Converte a hora no formato Hora:Minuto em string
 	function converte_hora($hora_total){

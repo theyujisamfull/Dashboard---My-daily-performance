@@ -1,4 +1,4 @@
-<table id='tabela_horarios_de_sono' border='1'>
+<table class='table table-striped table-sm table-hover table-bordered'>
 	
 	<?php
 	// Puxa os dados do banco de dados e printa a tabela
@@ -31,7 +31,7 @@
 	
 	//Printa a tabela
 	for ($i=0;$i<count($lista)-9;$i++) {
-		echo "<tr><th>".$colunas[$i+2]."</th><th>".$lista[$i]."/7</th></tr>";
+		echo "<tr><th class='text-center text-capitalize'>".$colunas[$i+2]."</th><th>".$lista[$i]."/7</th></tr>";
 	}
 	
 	
