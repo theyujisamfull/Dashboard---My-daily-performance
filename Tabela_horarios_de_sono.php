@@ -1,4 +1,4 @@
-<table class='table table-bordered table-striped table-sm table-hover '>
+<table class='table table-bordered table-striped table-sm table-hover table-dark'>
 	<thead><tr><th>Data</th><th>Acordei</th><th>Dormi</th><th>TSono</th></tr></thead>
 	<?php
 	//Converte a hora no formato Hora:Minuto em string

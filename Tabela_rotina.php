@@ -1,4 +1,4 @@
-<table class='table table-striped table-sm table-hover table-bordered'>
+<table class='table table-striped table-sm table-hover table-bordered table-dark'>
 	
 	<?php
 	// Puxa os dados do banco de dados e printa a tabela
@@ -31,7 +31,14 @@
 	
 	//Printa a tabela
 	for ($i=0;$i<count($lista)-9;$i++) {
-		echo "<tr><th class='text-center text-capitalize'>".$colunas[$i+2]."</th><th>".$lista[$i]."/7</th></tr>";
+		
+		if($lista[$i] <=3 ) { $cor = 'text-danger'; }
+		if($lista[$i] ==4 ) { $cor = 'text-info'; }
+		if($lista[$i] >=5 ) { $cor = 'text-white'; }
+		echo "<tr>
+				<th class='text-center text-capitalize'>".$colunas[$i+2]."</th>
+				<th class='".$cor."'>".$lista[$i]."/7</th>
+			</tr>";
 	}
 	
 	

@@ -1,4 +1,4 @@
-<table class='table table-bordered table-striped table-sm table-hover '>
+<table class='table table-bordered table-striped table-sm table-hover table-dark '>
 	<thead><tr><th>Disciplina</th><th>Ex</th><th>Last</th><th>HAulas</th><th>AEstu</th><th>Bruto</th><th>Tdia</th><th>DiaA</th><th>Hist</th></tr></thead>
 	<?php
 
@@ -6,9 +6,11 @@
 	//Apenda os nomes das colunas no vetor $colunas
 	$resp = mysqli_query($link,"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'id2368944_bmacao17' AND TABLE_NAME = 'quantas_horas_de_estudo_bruto_hoje'  "); 
 	$colunas = array(); 
+	$colunas_skill = array(); 
 	$aux =0; 
 	while($dado=$resp->fetch_array()){ 
-		if ($aux >=2 && $aux <=6) { array_push($colunas, $dado['COLUMN_NAME']);} // Pega somente as 5 primeiras colunas, sem contar id e data
+		if ($aux >=2 && $aux <=$x=6) { array_push($colunas, $dado['COLUMN_NAME']);} // Pega somente as 5 primeiras colunas, sem contar id e data
+		if ($aux >=2 && $aux <=$x=6+4) { array_push($colunas_skill, $dado['COLUMN_NAME']);} // Pega as 5 primeiras colunas mais 5, para que o $historico contabilize as skills
 		$aux +=1;
 	;} 
 
@@ -66,20 +68,21 @@
 	$horas_brutas_hoje = array();
 
 	while($dado=$resp->fetch_array()){ 
-		for ($i=0; $i<=count($colunas) ; $i++ ){ 
-			$horas_brutas_hoje[$i] = $dado[$colunas[$i]];		
+		for ($i=0; $i<=count($colunas_skill) ; $i++ ){ 
+			$horas_brutas_hoje[$i] = $dado[$colunas_skill[$i]];		
 		}
 	;} 
 	
 	// historico das horas totais estudadas em cada um dos ultimos 7 dias
+	//IMPORTANTE: 
 	$id = $id -7;
 	$resp = mysqli_query($link,"SELECT * FROM quantas_horas_de_estudo_bruto_hoje WHERE id>=$id ORDER BY id  DESC ");  
 	$historico = array();
 	
 	$aux=0;
 	while($dado=$resp->fetch_array()){ 
-		for ($i=0; $i<=count($colunas) ; $i++ ){ 
-			$historico[$aux] += $dado[ $colunas[$i] ];
+		for ($i=0; $i<=count($colunas_skill) ; $i++ ){ 
+			$historico[$aux] += $dado[ $colunas_skill[$i] ];
 		}
 		$aux+=1;
 	;} 
@@ -93,7 +96,7 @@
 			<tr>
 				<td class='text-uppercase'>".$colunas[$i]."</td>
 				<td>".$contancia[$i]." h</td>
-				<td>".$last[$i]." h</td>
+				<td>".$last[$i]."</td>
 				<td>".$horas_aulas[$i]." h</td>
 				<td>".$aula_estudada[$i]." h</td>
 				<td>".$bruto[$i]." h</td>

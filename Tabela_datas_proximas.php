@@ -1,4 +1,4 @@
-<table class='table table-striped table-hover'>
+<table class='table table-striped table-hover table-dark'>
 	<thead><tr><th>Prof</th><th>Timer</th><th>Evento</th><th>Data</th><th>Sem</th></tr></thead>
 	<?php
 	// Puxa os dados do banco de dados e printa a tabela
