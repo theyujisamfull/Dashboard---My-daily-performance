@@ -18,7 +18,7 @@
 	$resp = mysqli_query($link,"SELECT * FROM quantas_horas_de_estudo_bruto_hoje WHERE id=2   ");  
 	while($dado=$resp->fetch_array()){ 
 		foreach ( $colunas as $i ){ 
-			array_push($contancia , $dado[$i]);
+			array_push($contancia , round($dado[$i],1) );
 		}
 	}
 	//Last

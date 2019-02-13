@@ -114,7 +114,7 @@
 		
 	
 		
-	echo "<tr><td></td><td>".array_sum($contancia)." h</td><td></td><td>".array_sum($horas_aulas)." h</td><td>".array_sum($aula_estudada)." h</td><td>".array_sum($bruto)." h</td><td>".array_sum($horas_brutas_hoje)." h</td><td></td><td></td></tr>";
+	echo "<tr><td></td><td>".array_sum($contancia)." h</td><td></td><td>".array_sum($horas_aulas)." h</td><td>".array_sum($aula_estudada)." h</td><td>".array_sum($bruto)." h</td><td>".round(array_sum($horas_brutas_hoje),1)." h</td><td></td><td></td></tr>";
 	
 	?>
 	
