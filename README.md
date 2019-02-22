@@ -1,6 +1,8 @@
 # Dashboard---My-daily-performance
 Painel de controle que reúne métricas sobre minhas atividades diárias com o propósito de monitorar minha performance e buscar formas de melhorar tais métricas.
 
+LINK da para visualizar o dashboard:
+https://bmac17.000webhostapp.com/Dashboard-My_daily_performance/
 
 Então vamos explicar como funciona!
 
@@ -39,6 +41,8 @@ Tabela 6: Organição de atividades esporádicas
 Tabela 7: Controle de horários dedicados à melhorar skills
 
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_skills.png)
+
+
 
 
 
