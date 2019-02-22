@@ -62,5 +62,4 @@ E A INSERÇÃO DOS DADOS TAMBÉM É VIA SMARTPHONE, em que deixo links de atalho
 
 
 
-A INSER
 
