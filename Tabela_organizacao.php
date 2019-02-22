@@ -17,29 +17,54 @@
 	// Puxa os dados do banco de dados e printa a tabela
 	$resp = mysqli_query($link,"SELECT * FROM organization "); 
 	
-	function gera_linha_vetor($vetor , $text){
+	function gera_linha_vetor($vetor , $timer , $text){
 		
 		$linha = "<tr>";
-		foreach($vetor as $i){
-			$linha .=   "<td class='".$text."'>".$i."</td>"  ;
-		} 
+		if($timer == 0){
+			foreach($vetor as $i){
+				$linha .=   "<td class='".$text." '>".$i."</td>"  ;
+			} 
+		}
+		else{
+			for ($i=0 ; $i<count($timer) ; $i++) {
+				if( $timer[$i] <= $vetor[$i] ){ $cor = "text-danger"; }
+				else{ $cor = "text-white"; }
+				$linha .=   "<td class='".$text." ".$cor."'>".$vetor[$i]."</td>"  ;
+			} 	
+			
+		}
 		$linha .=  "</tr>" ;
+		
+		
+		
+		
+		
 		
 		echo $linha;
 	}
 	
-	gera_linha_vetor($colunas , 'text-capitalize');
+	gera_linha_vetor($colunas , 0, 'text-capitalize');
 	while($dado=$resp->fetch_array()){ 
 		$last = array();
+		$timer = array();
 		foreach($colunas as $i){
-			array_push($last , (date('z')-$dado[$i]) );
-		} 
-		gera_linha_vetor($last , 'text-capitalize');
+			
+			$vetor = sql_array( $dado[$i] );
+			$dia = $vetor[0];
+			array_push($last , (date('z')-$dia) );			
+			$t = $vetor[1];
+			array_push($timer , $t );
+			
+		}
+				
+		gera_linha_vetor($last , $timer , 'text-capitalize');
 	}
 		
 		
-		
+
 	
+	
+
 	
 	
 	

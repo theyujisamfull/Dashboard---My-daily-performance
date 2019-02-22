@@ -27,21 +27,21 @@
 			<div class='row'>
 				<div class='col-md-2'> <?php include('Tabela_datas_proximas.php');?>	</div>
 				<div class='col-md-4'> </div>
-				<div class='col-md-3'> <?php include('tabela_horarios_de_sono.php');?>  <?php echo "<img  src=".$myfilename."  class='img-fluid'  > ";  ?> <?php include('Tabela_skills.php');?>	</div>
+				<div class='col-md-3'> 
+					<?php include('Tabela_horarios_de_sono.php');?>  
+					<?php echo "<img  src=".$myfilename."  class='img-fluid'  > ";  ?> 
+					<?php include('Tabela_skills.php');?>	
+					<?php include("Tabela_organizacao.php");  ?>
+				</div>
 				
-				<div class='col-md-2'> <?php include('Tabela_rotina.php');?>	</div>
-				<div class='col-md-1'> </div>
+				<div class='col-md-3'> <?php include('Tabela_rotina.php');?> <?php include("Tabela_tarefas.php");  ?> 	</div>
+				
 				
 			</div>
 			
 			
 			<div class='row'>
-			<div class='col-md-6'> <?php include("Hora_em_porcentagem.php");  ?> </div>
-			<div class='col-md-3'> <?php include("Tabela_organizacao.php");  ?> </div>
-			<div class='col-md-3'> <?php include("Tabela_tarefas.php");  ?> </div>
-			</div>
-			<div class='row'>
-				<div class='col-md-6'>  </div>
+				<div class='col-md-6'> <?php include("Hora_em_porcentagem.php");  ?> </div>
 				<div class='col-md-6'> <?php include("Tabela_constancia.php");  ?> </div>
 				
 				
