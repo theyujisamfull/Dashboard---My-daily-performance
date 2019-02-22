@@ -27,18 +27,20 @@ Tabela 4: Controle de sono
 
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_sleep.png)
 
-Tabela 5: Horários de skill
+Tabela 5: Controle da constância das atividades rotineiras
 
-![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_skills.png)
-
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_rotina.png)
 
 Tabela 6: Organição de atividades esporádicas
 
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_organizacao.png)
 
-Tabela 7: Controle da constância das atividades rotineiras
 
-![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_rotina.png)
+Tabela 7: Controle de horários dedicados à melhorar skills
+
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_skills.png)
+
+
 
 
 E FINALMENTE A TABELA INTEIRA:
