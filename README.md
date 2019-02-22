@@ -50,3 +50,18 @@ Tabela 7: Controle de horários dedicados à melhorar skills
 E FINALMENTE A TABELA INTEIRA:
 
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_inteira.png)
+
+NO DIA A DIA USO COMO PLANO DE FUNDO DO CELULAR:
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/celular.png)
+
+
+
+E A INSERÇÃO DOS DADOS TAMBÉM É VIA SMARTPHONE:
+Em que deixo links de atalho os quais enviam os dados para o banco de dados (MySQL)
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/celular_send.png)
+
+
+
+
+A INSER
+
