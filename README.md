@@ -56,8 +56,7 @@ NO DIA A DIA USO COMO PLANO DE FUNDO DO CELULAR:
 
 
 
-E A INSERÇÃO DOS DADOS TAMBÉM É VIA SMARTPHONE:
-Em que deixo links de atalho os quais enviam os dados para o banco de dados (MySQL)
+E A INSERÇÃO DOS DADOS TAMBÉM É VIA SMARTPHONE, em que deixo links de atalho os quais enviam os dados para o banco de dados (MySQL)
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/celular_send.png)
 
 
