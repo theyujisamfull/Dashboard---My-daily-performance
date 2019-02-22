@@ -2,7 +2,7 @@
 Painel de controle que reúne métricas sobre minhas atividades diárias com o propósito de monitorar minha performance e buscar formas de melhorar tais métricas.
 
 LINK da para visualizar o dashboard:
-https://bmac17.000webhostapp.com/Dashboard-My_daily_performance/
+https://bmac17.000webhostapp.com/Piemos/estatistica/git/Dashboard-My_daily_performance/
 
 Então vamos explicar como funciona!
 
@@ -50,3 +50,16 @@ Tabela 7: Controle de horários dedicados à melhorar skills
 E FINALMENTE A TABELA INTEIRA:
 
 ![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/tabela_inteira.png)
+
+NO DIA A DIA USO COMO PLANO DE FUNDO DO CELULAR:
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/celular.png)
+
+
+
+E A INSERÇÃO DOS DADOS TAMBÉM É VIA SMARTPHONE, em que deixo links de atalho os quais enviam os dados para o banco de dados (MySQL)
+![Alt Text](https://github.com/theyujisamfull/Dashboard-My_daily_performance/blob/master/Readme_images/celular_send.png)
+
+
+
+
+
