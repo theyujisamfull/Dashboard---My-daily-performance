@@ -2,7 +2,7 @@
 Painel de controle que reúne métricas sobre minhas atividades diárias com o propósito de monitorar minha performance e buscar formas de melhorar tais métricas.
 
 LINK da para visualizar o dashboard:
-https://bmac17.000webhostapp.com/Dashboard-My_daily_performance/
+https://bmac17.000webhostapp.com/Piemos/estatistica/git/Dashboard-My_daily_performance/
 
 Então vamos explicar como funciona!
 
